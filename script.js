@@ -1,24 +1,17 @@
 // Assignment code here
 function generatePassword() {
-    var numbers = ['0123456789'];
-    var upperCase = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
-    var lowerCase = ['abcdefghijklmnopqrstuvwxyz']
-    var specialCharacters = ['!@#$%^&*()']
 
     var numQuestion = window.prompt('How many characters do you want your password to have?');
     
     var upCaseQuestion = window.confirm('Would you like to include Upper Case Letters?');
-    if(upCaseQuestion){
-        finalPassword = finalPassword(upperCase);
-    }
+
+    
     var lowCaseQuestion = window.confirm('Would you like to include Lower Case Letters?');
-    if(lowCaseQuestion){
-        finalPassword = finalPassword(lowerCase);
-    }
+   
+    
     var specialCharactersQuestion = window.confirm('Would you like to include special characters?');
-    if(specialCharactersQuestion){
-        finalPassword = finalPassword(specialCharacters);
-    }
+
+    
 
     var length = 8,
         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()",
